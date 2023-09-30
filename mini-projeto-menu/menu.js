@@ -5,7 +5,7 @@ console.clear()
 menu()
 
 function menu() {
-    console.log('Bem-vindo(a) ao menu de navegação da Minha Farma. \nDigite o número do departamento que deseja navegar:  \n1-Medicamentos \n2-Itens de higiêne \n3-Infantil')
+    console.log('Bem-vindo(a) ao menu de navegação da Minha Farma. \nDigite o número do departamento que deseja navegar:  \n1-Medicamentos \n2-Itens de higiene \n3-Infantil')
     var departamento = prompt('')
     switch (departamento) {
         case '1':
@@ -22,7 +22,7 @@ function menu() {
 
         break
         case '2':
-            console.log('Você está no departamento de itens de higiêne, digite abaixo o número do item que deseja comprar:\n1-Sabonete\n2-Shampoo\n3-Condicionador\n4-Escova dental\n5-Creme dental\n6-Fio dental\n7-Desodorante\n8-Enxaguante bucal')
+            console.log('Você está no departamento de itens de higiene, digite abaixo o número do item que deseja comprar:\n1-Sabonete\n2-Shampoo\n3-Condicionador\n4-Escova dental\n5-Creme dental\n6-Fio dental\n7-Desodorante\n8-Enxaguante bucal')
 
             var itemId = prompt('', 'number')
             var quantidade = prompt('Digite quantas unidades deseja comprar deste item: ')
@@ -92,6 +92,7 @@ function menu() {
                 var entrega = bairro[entregaId]
                 var valor_total = entrega.valor + y
                 console.clear()
+                console.log('Nota fiscal:\n')
                 console.log(`Endereço: ${bairro[entregaId].nome}, ${endereco}
                 \nValor de entrega: R$${entrega.valor},00
                 \nModo de pagamento: ${forma_pagamento}
